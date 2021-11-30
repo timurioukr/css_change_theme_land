@@ -1,0 +1,117 @@
+// Write your styles here
+body {
+    background-color:  $backgroundColor;
+    margin: 0;
+}
+//Header style---------------------------------
+.header {
+    height: 76vh;
+    background-image: $backgroundHeader;
+    border-bottom-right-radius: 80vh 30vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    &_heading {
+        @extend %heading-font;
+    }
+    &_text {
+        @extend %text-font;
+    }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 850px;
+            padding-left: 190px;
+            flex-wrap: wrap;
+                    & .landing-logo {
+                    display: flex;
+                    align-items: center;
+                    @extend %logo-font;
+                        & img {
+                            width: 50px;
+                        }
+                        & p {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-left: 10px;
+                            font-size: 23px;
+                            & span {
+                                font-size: 10px;
+                            }
+                        }
+            }
+        
+        }
+};
+.header-wrap div:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+};
+.header_button {
+   @extend %header-buttom;
+};
+.login {
+    @extend %header-login;
+};
+//---------------------Block style-----------------
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontFamily;
+    &_link {
+        color: rgb(177, 176, 176);
+    }
+    &_card_heading {
+        color:white;
+        font-weight: 600;
+    }
+    &_text {
+        @extend %section_text_style;
+    }
+    &_card_right_container {
+        text-align: center;
+        font-weight: 400;
+        width: 450px;
+        padding-left: 55px;
+    }
+    &_card_wrap {
+        width: 800px;
+    }
+    &_card {
+        display: flex;
+        flex-direction: row;
+        @extend %section-card-style;
+        &_text {
+            text-align: left;
+            color: rgb(177, 176, 176);
+        }
+    }
+}
+//Section banner---------------------------
+.section_banner{
+    background: $sectBannerGradient;
+    width: 850px;
+    display: flex;
+    text-align: start;
+    margin-top: 10vh;
+    z-index: 3;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+  }
+//Footer-------------------------------------
+.footer {
+    height: 150px;
+    display: flex;
+    @extend %footerSet;
+    &-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px;
+    }
+  }

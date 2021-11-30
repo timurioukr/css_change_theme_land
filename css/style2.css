@@ -1,0 +1,160 @@
+.header-wrap .landing-logo {
+  color: #ffffff;
+  height: 85px; }
+  .header-wrap .landing-logo p {
+    font-family: 'Hind', sans-serif;
+    font-weight: bold; }
+    .header-wrap .landing-logo p span {
+      font-weight: 800;
+      font-family: 'Hind', sans-serif; }
+
+.header_heading {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  margin-top: 55px;
+  margin-bottom: 45px;
+  line-height: 70px;
+  width: 500px; }
+  .header_heading::before {
+    content: 'awesome';
+    background-color: #f16f04;
+    position: absolute;
+    top: 210px;
+    left: 190px;
+    padding-bottom: 1px;
+    padding-top: 1px; }
+
+.header_text {
+  color: white;
+  font-weight: 200;
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  margin-bottom: 125px;
+  width: 550px;
+  margin-bottom: 50px; }
+
+.header_button {
+  font-family: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  color: #ffffff;
+  background-color: #f5970a;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-width: 0px; }
+
+.login {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 21px;
+  padding-right: 350px;
+  color: #ffffff;
+  font-weight: 600; }
+
+.section_text {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 600; }
+  .section_text::before {
+    content: 'adventure';
+    background-color: #f16f04;
+    position: absolute;
+    top: 710px;
+    left: 640px;
+    padding-bottom: 1px;
+    padding-top: 1px; }
+
+.section_card {
+  background-color: #2C2F3C;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.footer {
+  background: #262233;
+  color: white; }
+
+body {
+  background-color: #1e1c2b;
+  margin: 0; }
+
+.header {
+  height: 76vh;
+  background-image: url(/project/sass_koala_two_themes_land/img/m-h-night.jpg);
+  border-bottom-right-radius: 80vh 30vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .header-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 850px;
+    padding-left: 190px;
+    flex-wrap: wrap; }
+    .header-wrap .landing-logo {
+      display: flex;
+      align-items: center; }
+      .header-wrap .landing-logo img {
+        width: 50px; }
+      .header-wrap .landing-logo p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        font-size: 23px; }
+        .header-wrap .landing-logo p span {
+          font-size: 10px; }
+
+.header-wrap div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif; }
+  .section_link {
+    color: #b1b0b0; }
+  .section_card_heading {
+    color: white;
+    font-weight: 600; }
+  .section_card_right_container {
+    text-align: center;
+    font-weight: 400;
+    width: 450px;
+    padding-left: 55px; }
+  .section_card_wrap {
+    width: 800px; }
+  .section_card {
+    display: flex;
+    flex-direction: row; }
+    .section_card_text {
+      text-align: left;
+      color: #b1b0b0; }
+
+.section_banner {
+  background: linear-gradient(to right, #739D07, #3261CB);
+  width: 850px;
+  display: flex;
+  text-align: start;
+  margin-top: 10vh;
+  z-index: 3;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center; }
+
+.footer {
+  height: 150px;
+  display: flex; }
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px; }

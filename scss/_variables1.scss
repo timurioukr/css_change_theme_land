@@ -1,0 +1,91 @@
+$backgroundColor: #ffffff;
+$backgroundHeader: url(/img/m-h-day.jpg);
+$sectBannerGradient: linear-gradient(to right, #739D07, #3261CB);
+$fontColor:#2C2F3C;
+$fontFamily:'Source Sans Pro', sans-serif;
+
+%logo-font {
+    color: $fontColor;
+    height: 85px;
+    & p {
+        font-family: 'Hind', sans-serif;
+        font-weight: bold;
+        & span {
+            font-weight: 800;
+            font-family: 'Hind', sans-serif;
+        }
+    }
+};
+%heading-font {
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 72px;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    line-height: 70px;
+    width: 500px;
+    &::before {
+        content: 'awesome';
+        background-color: #32b4cb;
+        position: absolute;
+        top: 210px;
+        left: 190px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+};
+%text-font {
+    color: $fontColor;
+    font-weight: 200;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    margin-bottom: 125px;
+    width: 550px;
+    margin-bottom: 50px;
+};
+%header-buttom {
+    font-family: $fontFamily;
+    font-size: 20px;   
+    font-weight: 600;
+    position: relative;
+    color: #ffffff;
+    background-color: #739D07;
+    border-radius:5px;
+	cursor:pointer;
+	padding:15px 40px;
+    border-width: 0px;
+}
+%header-login {
+    font-family: $fontFamily;
+    font-size: 21px;
+    padding-right: 350px;
+    color: #ffffff;
+    font-weight: 600;
+}
+//---------------------Main style-----------------
+%section_text_style {
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-size: 42px;
+    font-weight: 600;
+    &::before {
+        content: 'adventure';
+        background-color: #32b4cb;
+        position: absolute;
+        top: 710px;
+        left: 640px;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+}
+%section-card-style {
+    background-color: #2C2F3C;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+%footerSet {
+    background: rgb(38, 34, 51);
+    color: white;
+};
